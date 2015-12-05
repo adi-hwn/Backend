@@ -14,13 +14,12 @@
     </div>
 
     <div id = "UPLOAD">
-      <div style="height:40px; padding-top:-10px">
-        <form action="/index" method="post" enctype=multipart/form-data>
-          <input type="file" id="file" name="file">
-            <input type="submit" value="SUBMIT">
-        </form>
-      </div>
-      <!-- <a href="/index" id="UploadButton" onclick="upload()">UPLOAD</a> -->
+      <form action="/index" method=post enctype=multipart/form-data>
+        <input type="file" name="file">
+        <input type="submit" value="SUBMIT">
+      </form>
+      <!-- <div style="height:40px; padding-top:-10px"><input type="file" id="FileUpload"></div> -->
+      <!--<a href="#" id="UploadButton" onclick="upload()">UPLOAD</a> -->
     </div>
 
     <!--This is to extend the page downwards so that we can
@@ -42,56 +41,49 @@
       <div class="note" id="n0">
         <div class="shell">
           <div class="dot" onmouseover="ply(0)"></div>
-          <div class="tailbot" id="b0"></div>
-          <div class="tailtop" id="t0"></div>
+          <div class="tail"></div>
         </div>
       </div>
 
       <div class="note" id="n1">
         <div class="shell">
           <div class="dot" onmouseover="ply(1)"></div>
-          <div class="tailbot" id="b1"></div>
-          <div class="tailtop" id="t1"></div>
+          <div class="tail"></div>
         </div>
       </div>
 
       <div class="note" id="n2">
         <div class="shell">
           <div class="dot" onmouseover="ply(2)"></div>
-          <div class="tailbot" id="b2"></div>
-          <div class="tailtop" id="t2"></div>
+          <div class="tail"></div>
         </div>
       </div>
 
       <div class="note" id="n3">
         <div class="shell">
           <div class="dot" onmouseover="ply(3)"></div>
-          <div class="tailbot" id="b3"></div>
-          <div class="tailtop" id="t3"></div>
+          <div class="tail"></div>
         </div>
       </div>
 
       <div class="note" id="n4">
         <div class="shell">
           <div class="dot" onmouseover="ply(4)"></div>
-          <div class="tailbot" id="b4"></div>
-          <div class="tailtop" id="t4"></div>
+          <div class="tail"></div>
         </div>
       </div>
 
       <div class="note" id="n5">
         <div class="shell">
           <div class="dot" onmouseover="ply(5)"></div>
-          <div class="tailbot" id="b5"></div>
-          <div class="tailtop" id="t5"></div>
+          <div class="tail"></div>
         </div>
       </div>
 
       <div class="note" id="n6">
         <div class="shell">
           <div class="dot" onclick="ply(6)"></div>
-          <div class="tailbot" id="b6"></div>
-          <div class="tailtop" id="t6"></div>
+          <div class="tail"></div>
         </div>
       </div>
     </div>
@@ -100,17 +92,17 @@
     </div>
 
     <div id = "Quote">
-      <p id = "HugoQuote">"Music expresses that which <b>cannot be said</b> and on which it is <b>impossible to be silent."</b> <br/>-&nbsp;<i>Victor Hugo (1802 - 1885)</i> </p>
+      <p id = "HugoQuote">"Music expresses that which <b>cannot be said</b> and on which it is <b>impossible to be silent."</b> -Victor Hugo</p>
     </div>
 
     <div id = "Extend"></div>
 
     <div id = "PianoPic">
-      <img src = "{{ directory }}piano.jpg" width="100%"></img>
+      <img src = '{{ directory }}piano.jpg' width="100%"></img>
     </div>
 </body>
 
-<script src = "{{ directory }}jquery-1.11.3.min.js"></script>
-<script src = "{{ directory }}PhoenixJS.js"></script>
+<script src = '{{ directory }}jquery-1.11.3.min.js'></script>
+<script src = '{{ directory }}PhoenixJS.js'></script>
 
 </html>

@@ -5,4 +5,4 @@ import os
 basedir = os.path.abspath(os.path.dirname(__file__))
 
 UPLOAD_FOLDER = 'files'
-ALLOWED_EXTENSIONS = set(['txt'])
+ALLOWED_EXTENSIONS = set(['jpg','txt'])
