@@ -39,7 +39,7 @@ def processLine(fileName, autoFlag):
 
     #cap = cv2.VideoCapture(0)
 
-    template = cv2.imread(os.path.join(basedir, 'app', 'PythonOMR', 'note2.png'),0)
+    template = cv2.imread(os.path.join(basedir, 'app', 'Python_OMR', 'note2.png'),0)
     w, h = template.shape[::-1]
 
     contProc = True

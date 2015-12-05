@@ -3,7 +3,7 @@ from werkzeug.utils import secure_filename
 from app import app
 from config import *
 from code.stuff import anotherThingToDo
-from PythonOMR.prototype2 import processLine
+from Python_OMR.prototype2 import processLine
 
 
 def allowed_file(filename):
