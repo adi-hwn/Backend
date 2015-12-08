@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+<title>Project Phoenix</title>
+<link href={{ url_for('static',filename='Phoenix.css') }} rel="stylesheet" type= "text/css">
+</head>
+
+<body class = "Body">
+    <div id = "Main">
+      <p id = "Title">PROJECT PHOENIX</p>
+      <p id = "Divider">* * * * *</p>
+      <p id = "Subtitle">PHYSICAL TO DIGITAL MUSIC</p>
+    </div>
+
+    <div id = "UPLOAD">
+      <form action="/index" method=post enctype=multipart/form-data>
+        <input type="file" name="file">
+        <input type="submit" value="SUBMIT">
+      </form>
+      <a href="#" id="UploadButton" onclick="upload()">UPLOAD</a>
+    </div>
+
+    <!--This is to extend the page downwards so that we can
+      see the piano at the bottom-->
+    <!--music staff (js functionality thingy)-->
+    <br>
+    <div class="staff">
+      <div class="line"></div>
+      <br>
+      <div class="line"></div>
+      <br>
+      <div class="line"></div>
+      <br>
+      <div class="line"></div>
+      <br>
+      <div class="line"></div>
+    </div>
+    <div style="margin:center">
+      <div class="note" id="n2" style="padding-left:20%">
+        <div class="shell">
+          <div class="dot"></div>
+        </div>
+      </div>
+
+      <div class="note" id="n3" style="padding-left:30%">
+        <div class="shell">
+          <div class="dot"></div>
+        </div>
+      </div>
+
+      <div class="note" id="n3" style="padding-left:40%">
+        <div class="shell">
+          <div class="dot"></div>
+        </div>
+      </div>
+
+      <div class="note" id="n3" style="padding-left:50%">
+        <div class="shell">
+          <div class="dot"></div>
+        </div>
+      </div>
+
+      <div class="note" id="n3" style="padding-left:60%">
+        <div class="shell">
+          <div class="dot"></div>
+        </div>
+      </div>
+
+      <div class="note" id="n3" style="padding-left:70%">
+        <div class="shell">
+          <div class="dot"></div>
+        </div>
+      </div>
+
+      <div class="note" id="n3" style="padding-left:80%">
+        <div class="shell">
+          <div class="dot"></div>
+        </div>
+      </div>
+    </div>
+    <div id = "Description">
+      <p id = "descrip">Welcome to Project Phoenix: an online tool designed to convert physical sheet music into digital music. Simply upload a high-quality scanned image of the physical sheet; we'll do the rest! Functionality is currently questionable at best, but we have high hopes for the future!</p>
+    </div>
+
+    <div id = "Quote">
+      <p id = "HugoQuote">"Music expresses that which <b>cannot be said</b> and on which it is <b>impossible to be silent."</b> -Victor Hugo</p>
+    </div>
+
+    <div id = "Extend"></div>
+
+    <div id = "PianoPic">
+      <img src = {{url_for('static',filename='piano.jpg') }} width="100%"></img>
+    </div>
+</body>
+
+<script src ={{ url_for('static',filename='PhoenixJS.js') }}></script>
+<script src ={{ url_for('static',filename='jquery-1.11.3.min.js') }}></script>
+</html>
